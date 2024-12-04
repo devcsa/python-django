@@ -115,58 +115,22 @@ http://127.0.0.1:8000/admin
 
 ## Como usar o GitHub
 
-Inicializar um novo repositorio GIT.
-´´´
 git init
-´´´
-
-Adicionar todos os arquivos modificados na área de preparação.
-´´´
 git add .
-´´´
-
-Commit registra as alterações feitas nos arquivos que foram adicionados na área de preparação.
-´´´
-git commit -m "Base do projeto"
-´´´
-
-Verificar em qual branch está.
-´´´
-git branch
-´´´
-
-Renomear a branch atual no GIT para main.
-´´´
+git commit -m "Project Base"
 git branch -M main
-´´´
-
-Adicionar um repositório remoto ao repositório local.
-´´´
-git remote add origin https://github.com/celkecursos/master-week-python-e-django.git
-´´´
-
-Enviar os commits locais para um repositório remoto.
-´´´
+git remote add origin https://github.com/devcsa/python-django.git
 git push -u origin main
-´´´
 
-Remover o arquivo do cache do GIT.
-´´´
+git remote add origin https://github.com/devcsa/python-django.git
+git branch -M main
+git push -u origin main
+
+## Remover o arquivo do cache do GIT.
+
 git rm --cached db.sqlite3
-´´´
 
 Remover o diretório do cache do GIT.
 ´´´
 git rm --cached -r admin/**pycache**/
 ´´´
-
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/devcsa/python-django.git
-git push -u origin main
-
-git remote add origin https://github.com/devcsa/python-django.git
-git branch -M main
-git push -u origin main
